@@ -2,15 +2,20 @@ const express = require("express");
 const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const config = require(__dirname + "/config.js");
 
 const app = express();
 
 app.set("view engine", "ejs");
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect('mongodb://localhost:27017/wikiDB', { useNewUrlParser: true, useUnifiedTopology: true });
+const secrets = config.secrets();
+const DB = secrets.my_DB;
+const PASSWORD = secrets.my_DB_password;
+
+// mongoose.connect('mongodb://localhost:27017/wikiDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://Shubham:' + PASSWORD + '@wikicluster.2l0fe.mongodb.net/' + DB + '?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const articleSchema = {
     title: String,
