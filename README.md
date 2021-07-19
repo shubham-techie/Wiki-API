@@ -12,12 +12,12 @@ A RESTful API for wikipedia made with ***expressjs*** and ***mongoDB*** native d
 2. content
 
 ### Functionalites :
-> for route localhost:3000/articles -
+> for route <https://localhost:3000/articles> -
 1. Get information for all the articles/documents.
 2. Add the document by entering the values of title and content.
 3. Delete all the articles.
 
-> for route localhost:3000/articles/{specific article} -
+> for route <https://localhost:3000/articles/{specific article}> -
 1. Get information by specifying the title in route.
 2. Update the whole document/article by specifying the title in route and enter the new values of title and content.
 3. Update part of the document/article by specifying the title in route and enter the new values of either title or content or both.
