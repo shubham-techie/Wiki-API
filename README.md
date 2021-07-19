@@ -1,5 +1,5 @@
 # **Wiki-API**
-A RESTful API for wikipedia made with ***expressjs*** and ***mongoDB*** native driver (with ***mongoose*** as ORM) to **extract, add, delete, update the articles**.
+A RESTful API for wikipedia made with ***expressjs***, ***mongoose*** and ***mongoDB-atlas*** to **extract, add, delete, update the articles**.
 
 ![image](https://user-images.githubusercontent.com/85562020/126122452-7b6b36c7-da6e-40f9-8eb0-76b7bc8e507c.png)
 
