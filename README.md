@@ -1,5 +1,5 @@
 # **Wiki-API**
-A RESTful API for wikipedia to **extract, add, delete, update the articles** made with ***expressjs*** and ***mongoDB*** native driver (with ***mongoose*** as ORM).
+A RESTful API for wikipedia made with ***expressjs*** and ***mongoDB*** native driver (with ***mongoose*** as ORM) to **extract, add, delete, update the articles**.
 
 ### Endpoint :
 localhost:3000/articles
