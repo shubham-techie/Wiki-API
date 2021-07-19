@@ -14,7 +14,7 @@ localhost:3000/articles
 2. Add the document by entering the values of title and content.
 3. Delete all the articles.
 
-> for route localhost:3000/articles/{specfic article} -
+> for route localhost:3000/articles/{specific article} -
 1. Get information by specifying the title in route.
 2. Update the whole document/article by specifying the title in route and enter the new values of title and content.
 3. Update part of the document/article by specifying the title in route and enter the new values of either title or content or both.
