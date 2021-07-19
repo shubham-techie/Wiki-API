@@ -5,7 +5,7 @@ A RESTful API for wikipedia made with ***expressjs*** and ***mongoDB*** native d
 
 
 ### Endpoint :
-localhost:3000/articles
+<https://localhost:3000/articles>
 
 ### Parameters :
 1. title
