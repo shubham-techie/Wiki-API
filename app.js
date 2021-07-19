@@ -1,12 +1,12 @@
 const express = require("express");
-const ejs = require("ejs");
+// const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const config = require(__dirname + "/config.js");
 
 const app = express();
 
-app.set("view engine", "ejs");
+// app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -23,6 +23,7 @@ const articleSchema = {
 };
 
 const Article = new mongoose.model("Article", articleSchema);
+
 
 app.route("/articles")
     .get(function (req, res) {
@@ -62,6 +63,7 @@ app.route("/articles")
     });
 
 
+// handling specific article
 
 app.route("/articles/:articleTitle")
     .get((req, res) => {
